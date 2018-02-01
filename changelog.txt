@@ -1,0 +1,3 @@
+19/01/18 : Creation of the jCodeGen directory
+23/01/19 : -Upload of the source code of jAutoMakefile and jClassGen
+	   -Creation of a better verision of jAutoMakefile, jAutoMk (in C++)

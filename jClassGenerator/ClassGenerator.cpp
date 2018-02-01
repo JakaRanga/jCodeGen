@@ -31,7 +31,7 @@ std::string		ClassGenerator::getUserName()
 
 std::string		ClassGenerator::getHpp()
 {
-	std::string	head = this->Name;;
+	std::string	head = this->Name;
 	int		i = 0;
 
 	while (head[i])
