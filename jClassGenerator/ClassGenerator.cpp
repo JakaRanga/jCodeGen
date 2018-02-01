@@ -92,22 +92,22 @@ bool			ClassGenerator::fileGen()
 	putHeader(fHpp, false);
 	putHeader(fCpp, true);
 	
-	fHpp << "#ifndef " << this->Head << std::endl;
-	fHpp << "# define " << this->Head << std::endl << std::endl;
-	fHpp << "#include <iostream>" << std::endl << std::endl;
-	fHpp << "class " << this->Name << std::endl;
-	fHpp << "{" << std::endl << "public:" << std::endl;
-	fHpp << "\t" << this->Name << "();" << std::endl << std::endl;
-	fHpp << "\t~" << this->Name << "();" << std::endl << std::endl;
-	fHpp << "private:" << std::endl;
-	fHpp << "};" << std::endl << std::endl;
-	fHpp << "#endif /* !" << this->Head << " */" << std::endl;
+	fHpp << "#ifndef " << this->Head << std::endl
+	     << "# define " << this->Head << std::endl << std::endl
+	     << "#include <iostream>" << std::endl << std::endl
+	     << "class " << this->Name << std::endl
+	     << "{" << std::endl << "public:" << std::endl
+	     << "\t" << this->Name << "();" << std::endl << std::endl
+	     << "\t~" << this->Name << "();" << std::endl << std::endl
+	     << "private:" << std::endl
+	     << "};" << std::endl << std::endl
+	     << "#endif /* !" << this->Head << " */" << std::endl;
 
-	fCpp << "#include \"" << this->Name << ".hpp\"" << std::endl << std::endl;
-	fCpp << this->Name << "::" << this->Name << "()" << std::endl;
-	fCpp << "{" << std::endl << "}" << std::endl << std::endl << std::endl;
-	fCpp << this->Name << "::~" << this->Name << "()" << std::endl;
-	fCpp << "{" << std::endl << "}";
+	fCpp << "#include \"" << this->Name << ".hpp\"" << std::endl << std::endl
+	     << this->Name << "::" << this->Name << "()" << std::endl
+	     << "{" << std::endl << "}" << std::endl << std::endl << std::endl
+	     << this->Name << "::~" << this->Name << "()" << std::endl
+	     << "{" << std::endl << "}";
 
 	fHpp.close();
 	fCpp.close();
