@@ -1,8 +1,8 @@
 //
-// EPITECH PROJECT, 2018
-//  gen cpp
+// JAKA PROJECT, 2018
+//
 // File description:
-// 
+// Cpp file jClassGenerator
 //
 
 #include "ClassGenerator.hpp"
