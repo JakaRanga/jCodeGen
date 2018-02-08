@@ -1,8 +1,8 @@
 //
-// EPITECH PROJECT, 2018
-// class gen hpp
-// File description:
+// JAKA PROJECT, 2018
 // 
+// File description:
+// hpp file jClassGenerator
 //
 
 #ifndef CLASSGENERATOR_HPP_
